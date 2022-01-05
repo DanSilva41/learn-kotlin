@@ -1,0 +1,3 @@
+* Classes
+    - It's final by default
+    - To make a class inheritable, mark it as `open`

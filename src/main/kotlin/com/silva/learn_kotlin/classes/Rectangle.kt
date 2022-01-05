@@ -9,6 +9,7 @@ package com.silva.learn_kotlin.classes
 /* contains a nested comment */
 and ends here. */
 
-class Rectangle(var height: Double, var length: Double) {
-    var perimiter = (height + length) * 2
+// Classes  are final by default
+class Rectangle(height: Double, length: Double): Shape() {
+    val perimiter = (height + length) * 2
 }

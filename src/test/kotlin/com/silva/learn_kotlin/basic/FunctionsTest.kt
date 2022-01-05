@@ -1,6 +1,5 @@
 package com.silva.learn_kotlin.basic
 
-import com.silva.learn_kotlin.basic.Functions
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
