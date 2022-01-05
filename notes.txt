@@ -1,3 +1,6 @@
 * Classes
     - It's final by default
     - To make a class inheritable, mark it as `open`
+
+* Iterate over a range
+    - until -> half-open range: does not include the final value

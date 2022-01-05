@@ -1,6 +1,7 @@
 package com.silva.learn_kotlin.basic
 
 import org.junit.jupiter.api.Test
+import kotlin.test.assertEquals
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 
@@ -39,5 +40,12 @@ internal class RangeTest {
     @Test
     fun shouldIterateRangeWithProgressionAndDownTo() {
         Range().iterateRangeProgressionDownTo(10)
+    }
+
+    @Test
+    fun shouldIterateRangeWithUntil() {
+        var finalValue = 0
+        for (i in 1 until 100) finalValue = i
+        assertEquals(99, finalValue)
     }
 }
