@@ -12,10 +12,15 @@ import kotlin.test.assertTrue
 internal class ProductTest {
 
     lateinit var products: Set<Product>
+    lateinit var mapProducts: MutableMap<Int, Product>
 
     @BeforeAll
     fun setUp() {
         products = this.createProducts()
+        mapProducts = mutableMapOf()
+        for (p in products) {
+            mapProducts.put(p.id, p)
+        }
     }
 
     @Test
@@ -48,6 +53,15 @@ internal class ProductTest {
         val name: Any = "Someone"
         assertTrue { name is String }
         assertFalse { name is Product }
+    }
+
+    @Test
+    fun accessMapOfProdcuts() {
+        println(mapProducts[2])
+        mapProducts[2]!!.price = BigDecimal("899.99")
+        println(mapProducts[2])
+
+        for((k, v) in mapProducts) println("$k -> $v")
     }
 
     private fun createProducts(): Set<Product> {

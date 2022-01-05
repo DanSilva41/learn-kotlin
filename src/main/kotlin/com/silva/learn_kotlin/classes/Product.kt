@@ -2,7 +2,7 @@ package com.silva.learn_kotlin.classes
 
 import java.math.BigDecimal
 
-class Product(val id: Int, var name: String?, var price: BigDecimal = BigDecimal.ZERO) : Comparable<Product> {
+data class Product(val id: Int, var name: String?, var price: BigDecimal = BigDecimal.ZERO) : Comparable<Product> {
 
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
