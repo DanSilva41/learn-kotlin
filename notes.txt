@@ -4,3 +4,7 @@
 
 * Iterate over a range
     - until -> half-open range: does not include the final value
+
+* Interesting
+    - Extension functions
+    - Object expressions
