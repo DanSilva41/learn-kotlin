@@ -1,5 +1,6 @@
 package com.silva.learn_kotlin.functions
 
+import com.silva.learn_kotlin.basic.Color
 import org.junit.jupiter.api.Test
 
 internal class ObjectExpressions {

@@ -9,3 +9,7 @@
     - Extension functions
     - Object expressions
     - Companion objects
+    - Sealed classes and interfaces
+    - Way with Generics (cool)
+    - Inline classes
+    - Delegation
