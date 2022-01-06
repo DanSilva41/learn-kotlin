@@ -13,3 +13,8 @@
     - Way with Generics (cool)
     - Inline classes
     - Delegation
+    - Safe calls
+    - Elvis operator (?:)
+    - Try how a expression
+    - Exception (Nothing)
+    - Annotations
