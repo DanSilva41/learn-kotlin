@@ -8,3 +8,4 @@
 * Interesting
     - Extension functions
     - Object expressions
+    - Companion objects
