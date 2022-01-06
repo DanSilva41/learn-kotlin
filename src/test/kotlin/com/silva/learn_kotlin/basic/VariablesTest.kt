@@ -4,13 +4,9 @@ import org.junit.jupiter.api.Test
 
 internal class VariablesTest {
 
-    @Test
-    fun shouldCallRun() {
-        Variables().run()
-    }
+    @Test fun shouldCallRun() = Variables().run()
 
-    @Test
-    fun shouldShowSnapVariables() {
+    @Test fun shouldShowSnapVariables() {
         var a = 10
         var b = 20
         b = a.also { a = b }

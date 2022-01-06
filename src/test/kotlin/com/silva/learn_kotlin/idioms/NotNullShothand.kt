@@ -7,15 +7,13 @@ import kotlin.test.assertNull
 
 internal class NotNullShothand {
 
-    @Test
-    fun verifyNullValue() {
+    @Test fun verifyNullValue() {
         val files = File("Test").listFiles()
 
         assertNull(files?.size)
     }
 
-    @Test
-    fun verifyNullValueWithElse() {
+    @Test fun verifyNullValueWithElse() {
         val files = File("Test").listFiles()
 
         assertEquals("empty", files?.size ?: "empty")

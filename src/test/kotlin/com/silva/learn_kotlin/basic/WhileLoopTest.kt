@@ -5,8 +5,7 @@ import org.junit.jupiter.api.Test
 
 internal class WhileLoopTest {
 
-    @Test
-    fun shouldIterateInItems() {
+    @Test fun shouldIterateInItems() {
         WhileLoop().iterateInItems()
     }
 }

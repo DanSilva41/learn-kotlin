@@ -6,8 +6,7 @@ import kotlin.test.assertTrue
 
 internal class PojoTest {
 
-    @Test
-    fun validatePojo() {
+    @Test fun validatePojo() {
         val onePojo = Pojo("user", "user@email.com")
         val samePojo = onePojo.copy()
         val otherPojo = onePojo.copy("user1")

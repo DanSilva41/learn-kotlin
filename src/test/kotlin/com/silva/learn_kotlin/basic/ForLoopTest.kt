@@ -4,13 +4,11 @@ import org.junit.jupiter.api.Test
 
 internal class ForLoopTest {
 
-    @Test
-    fun shouldIterateInItems() {
+    @Test fun shouldIterateInItems() {
         ForLoop().iterateInItems()
     }
 
-    @Test
-    fun shouldIterateInIndices() {
+    @Test fun shouldIterateInIndices() {
         ForLoop().iterateInIndices()
     }
 }

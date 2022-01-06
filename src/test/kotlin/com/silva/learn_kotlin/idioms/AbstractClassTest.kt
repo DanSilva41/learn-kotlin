@@ -4,8 +4,7 @@ import org.junit.jupiter.api.Test
 
 internal class AbstractClassTest {
 
-    @Test
-    fun testAbstractClass() {
+    @Test fun testAbstractClass() {
         val myObject = object : AbstractClass() {
             override fun doSomething() {
                 println("Something")

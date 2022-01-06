@@ -5,8 +5,7 @@ import kotlin.test.assertEquals
 
 internal class RectangleTest {
 
-    @Test
-    fun shouldCalculatePerimiter() {
+    @Test fun shouldCalculatePerimiter() {
         val rectangle = Rectangle(5.0, 2.0)
 
         assertEquals(14.0, rectangle.perimiter)

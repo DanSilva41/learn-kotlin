@@ -6,16 +6,14 @@ import org.junit.jupiter.api.Test
 
 internal class CalculatorTest {
 
-    @Test
-    fun shouldSumTwoInt() {
+    @Test fun shouldSumTwoInt() {
         val a = 10
         val b = 7
         val result = Calculator().sum(a, b)
         assertEquals(17, result)
     }
 
-    @Test
-    fun shouldSubTwoInt() {
+    @Test fun shouldSubTwoInt() {
         val a = 10
         val b = 7
         val result = Calculator().sub(a, b)

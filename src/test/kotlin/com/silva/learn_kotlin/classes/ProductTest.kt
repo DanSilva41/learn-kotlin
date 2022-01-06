@@ -23,8 +23,7 @@ internal class ProductTest {
         }
     }
 
-    @Test
-    fun shouldIterateInManyProducts() {
+    @Test fun shouldIterateInManyProducts() {
         for (p in products) {
             println("Product number ${products.indexOf(p)}, ${p.name} - ${p.price}")
         }
@@ -42,21 +41,18 @@ internal class ProductTest {
             .forEach { println("Product number ${products.indexOf(it)}, ${it.name} - ${it.price}") }
     }
 
-    @Test
-    fun validateNullName() {
+    @Test fun validateNullName() {
         val returnedProduct = products.any { it.changeableName() == null }
         assertTrue { returnedProduct }
     }
 
-    @Test
-    fun checkType() {
+    @Test fun checkType() {
         val name: Any = "Someone"
         assertTrue { name is String }
         assertFalse { name is Product }
     }
 
-    @Test
-    fun accessMapOfProdcuts() {
+    @Test fun accessMapOfProdcuts() {
         println(mapProducts[2])
         mapProducts[2]!!.price = BigDecimal("899.99")
         println(mapProducts[2])

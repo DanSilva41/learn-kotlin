@@ -5,8 +5,7 @@ import org.junit.jupiter.api.Test
 
 internal class SingletonTest {
 
-    @Test
-    fun inicializeSingleton() {
+    @Test fun inicializeSingleton() {
         val singleton = Singleton
         assertEquals("Name", singleton.name)
 

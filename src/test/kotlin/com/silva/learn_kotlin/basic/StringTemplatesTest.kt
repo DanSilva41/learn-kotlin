@@ -4,8 +4,7 @@ import org.junit.jupiter.api.Test
 
 internal class StringTemplatesTest {
 
-    @Test
-    fun shouldPrintStringByTemplate() {
+    @Test fun shouldPrintStringByTemplate() {
         StringTemplates().run()
     }
 }

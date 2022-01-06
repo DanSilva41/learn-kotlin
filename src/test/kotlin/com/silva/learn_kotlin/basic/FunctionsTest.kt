@@ -5,14 +5,12 @@ import org.junit.jupiter.api.Test
 
 internal class FunctionsTest {
 
-    @Test
-    fun shouldNotReturnAnythingWithUnit() {
+    @Test fun shouldNotReturnAnythingWithUnit() {
         val result = Functions().returnNothingWithUnit()
         assertEquals(Unit, result)
     }
 
-    @Test
-    fun shouldNotReturnAnything() {
+    @Test fun shouldNotReturnAnything() {
         val result = Functions().returnNothing()
         assertEquals(Unit, result)
     }
