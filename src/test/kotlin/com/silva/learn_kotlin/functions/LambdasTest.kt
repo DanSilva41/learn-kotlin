@@ -1,6 +1,8 @@
 package com.silva.learn_kotlin.functions
 
+import com.silva.learn_kotlin.classes.Product
 import org.junit.jupiter.api.Test
+import java.math.BigDecimal
 
 internal class LambdasTest {
 
@@ -32,6 +34,9 @@ internal class LambdasTest {
         println(intPlus.invoke(1, 2))
         println(intPlus(1, 1))
         println(2.intPlus(3)) // extension
+
+        val product = Product(id = 1, price = BigDecimal.TEN, name = "Sofa", any = 5)
+        product.getAny()
 
     }
 }
